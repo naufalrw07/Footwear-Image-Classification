@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TensorFlow.js • Image Classifier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-container">
+        <img src="assets/tensorflow-logo.png" alt="TensorFlow Logo" class="logo">
+        <div class="header-text">
+          <h1>TensorFlow.js</h1>
+          <h2>Image Classification</h2>
+        </div>
+      </div>
+      <p class="intro-text">
+        Upload an image and let our AI instantly tell you what footwear it is — all in-browser, zero server.
+      </p>
+    </header>
+
+    <div class="card">
+      <h3 class="card-title">Upload Your Image</h3>
+      <input type="file" id="file-input" accept="image/*" class="file-input">
+
+      <div id="image-preview" class="image-preview"></div>
+
+      <div id="progress-container" class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <div id="result" class="result">Loading model…</div>
+      <div id="details" class="details"></div>
+
+      <div class="button-group">
+        <button id="reupload-btn" class="btn btn-secondary hidden">Re-upload</button>
+        <button id="reset-btn"    class="btn btn-primary hidden">Reset</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Made with ❤️ by <strong>Naufal Rafly Wanhar</strong></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
